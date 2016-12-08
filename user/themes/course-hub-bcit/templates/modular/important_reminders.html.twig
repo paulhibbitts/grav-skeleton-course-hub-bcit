@@ -1,0 +1,4 @@
+{% set color = page.header.notice_color %}
+<div class="sg-notice{% if color %} sg-notice-color-{{ color }}{% endif %}">
+  {{ page.content }}
+</div>

@@ -1,0 +1,38 @@
+title: Reminders
+@extends: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    name:
+                      default: modular/reminders
+                      @data-options: '\Grav\Common\Page\Pages::modularTypes'
+            overrides:
+              fields:
+                header.template:
+                  default: modular/reminders
+                  @data-options: '\Grav\Common\Page\Pages::modularTypes'
+        styles:
+          type: tab
+          title: Styles
+          fields:
+            header.notice_color:
+              type: select
+              label: Notice Color
+              size: small
+              classes: fancy
+              default: blue
+              options:
+                'blue': 'Blue'
+                'yellow': 'Yellow'
+                'red': 'Red'
+
+        assets:
+          type: ignore
