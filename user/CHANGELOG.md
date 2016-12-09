@@ -1,3 +1,9 @@
+# v0.5.0
+## 12/08/2016
+
+1. [](#improvement)
+    * Included Grav 1.1.8 and updated theme feature parity to open source Course Hub Bones theme
+
 # v0.4.0
 ## 7/15/2016
 
