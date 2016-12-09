@@ -13,3 +13,6 @@ Any required preparations before each class will be posted here by Thursday of t
 A summary of presented materials will usually be posted the day after class.
 
 Please send your comments and feedback to <somename@somewhere.edu>.
+
+![Image of course hub on Apple iPhone](course-companion-iphone.jpg)  
+_Figure 1. Course hub viewed on an Apple iPhone_
