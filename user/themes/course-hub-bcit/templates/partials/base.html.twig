@@ -134,31 +134,29 @@
         {% endblock %}
 
         {% block github %}
-        {% if not (page.title == 'Home') %}
-        {% if config.site.github.location == 'page' and (not page.header.hidegithublink) %}
-          {% if page.header.githublink %}
-            {% set githubURL = page.header.githublink %}
-          {% else %}
-            {% set githubURL = config.site.github.tree ~  ('/'~page.filePathClean)|replace({'/user/':''}) %}
-          {% endif %}
+        {% if config.site.gitrepo.editlinklocation == 'page' and (not page.header.hidegithublink) %}
+        {% if page.header.gitrepoeditlinkurl %}
+          {% set gitrepoeditlinkurl = page.header.gitrepoeditlinkurl %}
+        {% else %}
+          {% set gitrepoeditlinkurl = config.site.gitrepo.edittreeurl ~  ('/'~page.filePathClean)|replace({'/user/':''}) %}
+        {% endif %}
         <div id="github">
           <div class="row">
                 <span class="float-left">
-                    <a href="{{ githubURL }}" target="_blank" title="Edit this page">
-                    {% if config.site.github.icon %}
-                      <i class="fa fa-{{ config.site.github.icon }}" aria-hidden="true"></i>
+                    <a href="{{ gitrepoeditlinkurl }}" target="_blank" title="{{ config.site.gitrepo.editlinktext }}">
+                    {% if config.site.gitrepo.editlinkicon %}
+                      <i class="fa fa-{{ config.site.gitrepo.editlinkicon }}" aria-hidden="true"></i>
                     {% endif %}
                 </a>
             </span>
             <p class="float-left">
                 <span class="show-for-medium">Have a suggestion or correction?</span>
-                <a href="{{ githubURL }}" target="_blank" title="Edit this page">
-                    <span>Edit this Page</span>
+                <a href="{{ gitrepoeditlinkurl }}" target="_blank" title="{{ config.site.gitrepo.editlinktext }}">
+                    <span>{{ config.site.gitrepo.editlinktext }}</span>
                 </a>
             </p>
           </div>
         </div>
-        {% endif %}
         {% endif %}
         {% endblock %}
 

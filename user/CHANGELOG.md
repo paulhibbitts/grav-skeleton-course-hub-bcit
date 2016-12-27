@@ -1,3 +1,9 @@
+# v0.5.1
+## 12/27/2016
+
+1. [](#improvement)
+    * Included Grav 1.1.12 and updated the names of all Git-related site and page header variables
+
 # v0.5.0
 ## 12/08/2016
 

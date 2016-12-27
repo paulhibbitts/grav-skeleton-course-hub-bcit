@@ -9,10 +9,11 @@ menu:                     # menu entry for adding external sites/tools
       url: http://getgrav.org/
 icon:                     # default font awesome icons for preparation and post entries
     post: calendar-o
-github:
-    location: none        # menu | page | none
-    icon: github
-    tree: https://github.com/hibbitts-design/grav-skeleton-course-hub-site/edit/master/user/pages/
+gitrepo:
+    editlinklocation: none  # menu | page | none
+    editlinkicon: github
+    editlinktext: 'Edit this Page'
+    edittreeurl: https://github.com/hibbitts-design/grav-skeleton-course-hub-site/edit/master/user/
 twittertimeline:
     enabled: false        # display of Twitter timeline on sidebar
     url: https://twitter.com/hibbittsdesign/lists/cpt-363
