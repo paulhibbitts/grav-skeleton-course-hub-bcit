@@ -138,7 +138,7 @@
         {% if page.header.gitrepoeditlinkurl %}
           {% set gitrepoeditlinkurl = page.header.gitrepoeditlinkurl %}
         {% else %}
-          {% set gitrepoeditlinkurl = config.site.gitrepo.edittreeurl ~  ('/'~page.filePathClean)|replace({'/user/':''}) %}
+          {% set gitrepoeditlinkurl = config.site.gitrepo.edittreeurl ~  ('/'~page.filePathClean)|replace({'/user/':'/'}) %}
         {% endif %}
         <div id="github">
           <div class="row">
