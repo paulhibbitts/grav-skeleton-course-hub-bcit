@@ -1,0 +1,24 @@
+streams:
+  schemes:
+    theme:
+      type: ReadOnlyStream
+      prefixes:
+        '': [user/themes/mytheme, user/themes/course-hub-bcit, user/themes/bones-vanilla]
+site_title:
+  enabled: false
+google_fonts_logo:
+  enabled: false
+fontawesome:
+  enabled: true
+animate_css:
+  enabled: false
+wow_js:
+  enabled: false
+google_prettify:
+  enabled: true
+dropdown:
+  enabled: true
+mobilemenu_breakpoint: medium
+mobilemenu_position: left
+css_custom:
+  enabled: false

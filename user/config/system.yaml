@@ -4,7 +4,8 @@ default_locale: null
 param_sep: ':'
 wrapped_site: false
 reverse_proxy_setup: false
-proxy_url: null
+force_ssl: false
+custom_base_url: ''
 languages:
   supported: {  }
   include_default_lang: true
@@ -17,7 +18,7 @@ home:
   alias: /home
   hide_in_urls: false
 pages:
-  theme: course-hub-bcit
+  theme: mytheme
   order:
     by: default
     dir: asc
@@ -32,6 +33,7 @@ pages:
     markdown: true
     twig: false
   twig_first: false
+  never_cache_twig: false
   events:
     page: true
     twig: true
@@ -66,6 +68,11 @@ pages:
     - .idea
   ignore_hidden: true
   url_taxonomy_filters: true
+  frontmatter:
+    process_twig: false
+    ignore_fields:
+      - form
+      - forms
   markdown_extra: false
 cache:
   enabled: true
@@ -73,8 +80,12 @@ cache:
     method: file
   driver: auto
   prefix: g
+  cli_compatibility: false
   lifetime: 604800
   gzip: false
+  allow_webserver_gzip: false
+  redis:
+    socket: false
 twig:
   cache: true
   debug: true
@@ -85,10 +96,14 @@ twig:
   umask_fix: false
 assets:
   css_pipeline: false
+  css_pipeline_include_externals: true
+  css_pipeline_before_excludes: true
   css_minify: true
   css_minify_windows: false
   css_rewrite: true
   js_pipeline: false
+  js_pipeline_include_externals: true
+  js_pipeline_before_excludes: true
   js_minify: true
   enable_asset_timestamp: false
   collections:
@@ -106,6 +121,7 @@ images:
   cache_all: false
   cache_perms: '0755'
   debug: false
+  auto_fix_orientation: false
 media:
   enable_media_timestamp: false
   upload_limit: 0
@@ -117,3 +133,11 @@ session:
   name: grav-site
   secure: false
   httponly: true
+  split: true
+  path: null
+gpm:
+  releases: stable
+  proxy_url: null
+  method: auto
+  verify_peer: true
+proxy_url: null
