@@ -16,5 +16,4 @@ google_prettify: use_global
 wow_js: use_global
 animate_css: use_global
 fontawesome: use_global
-gitrepoeditlinkurl: https://github.com/hibbitts-design/grav-skeleton-course-hub-site/tree/master/user/pages/01.home
 ---
