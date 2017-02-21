@@ -1,3 +1,9 @@
+# v0.5.2
+## 02/21/2017
+
+1. [](#improvement)
+    * Included Git Sync plugin and updated page/theme sync settings
+
 # v0.5.1
 ## 12/27/2016
 
