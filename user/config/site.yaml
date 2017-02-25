@@ -31,4 +31,4 @@ gitrepo:
   editlinkicon: github
 twittertimeline:
   enabled: false
-  height: 700
+  height: 600
